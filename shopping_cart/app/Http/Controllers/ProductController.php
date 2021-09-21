@@ -37,4 +37,9 @@ class ProductController extends Controller
             return redirect('login');
         }
     } 
+    static function cartItem(){
+        // $user_Id = Session::get('user')['id'];
+        $user_Id = session()->get('user')->id;
+        return Cart::where('user_id',$user_Id)->count();
+    }  
 }
