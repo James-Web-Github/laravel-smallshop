@@ -33,3 +33,5 @@ Route::get('logout', function(){
     return redirect('/');
 }
 );
+Route::get('cartlist', [ProductController::class,'cartlist']
+);

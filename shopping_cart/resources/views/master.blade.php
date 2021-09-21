@@ -60,6 +60,11 @@
     .search-box{
         width: 500px !important
     }
+    .cartlist-devider{
+        border-bottom: 1px solid #ccc;
+        margin:20px;
+        padding: 20px;
+    }
 
 </style>
 </html>
